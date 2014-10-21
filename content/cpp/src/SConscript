@@ -1,0 +1,17 @@
+
+Import('contsenv')
+
+srcs = contsenv.Glob('*.cc')
+contsenv.Append(CPPPATH = contsenv.Dir('$APP_COMMON_DIR/cpp/samples_common').srcnode())
+libs = []
+
+# Static library
+objs = contsenv.Object(srcs)
+libs.append(contsenv.StaticLibrary('alljoyn_media_content', objs))
+
+# Shared library
+if contsenv.get('LIBTYPE', 'static') != 'static':
+    shobjs = contsenv.SharedObject(srcs)
+    libs.append(contsenv.SharedLibrary('alljoyn_media_content', shobjs))
+
+Return('libs')

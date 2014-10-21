@@ -1,0 +1,12 @@
+
+print 'Building sampleContentSerivceClient'
+
+Import('env', 'cobjs')
+
+srcs = env.Glob('*.cc')
+objs = env.Object(srcs)
+objs.extend(cobjs)
+
+prog = env.Program('SampleContentServiceClient', objs)
+
+Return('prog')

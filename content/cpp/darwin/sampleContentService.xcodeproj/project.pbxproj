@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		861ED4CD1A10B684004CEF74 /* BundledRouter.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 861ED4CC1A10B684004CEF74 /* BundledRouter.o */; };
+		863F30DB19FE7047007EB277 /* libmdfContentService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 863F30DA19FE7047007EB277 /* libmdfContentService.a */; };
+		868D61DA19EA598A00A03B1C /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 868D61D919EA598A00A03B1C /* libcrypto.a */; };
+		868D61DC19EA5A3900A03B1C /* libc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 868D61DB19EA5A3900A03B1C /* libc.dylib */; };
+		868D61DE19EA5A7200A03B1C /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 868D61DD19EA5A7200A03B1C /* libc++.dylib */; };
+		868D61E219EA5B7400A03B1C /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 868D61E119EA5B7400A03B1C /* libstdc++.6.dylib */; };
+		868D61E419EA5BFF00A03B1C /* libajrouter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 868D61E319EA5BFF00A03B1C /* libajrouter.a */; };
+		86AB495F19FA3DE7006AF1B2 /* ContentManager.cc in Sources */ = {isa = PBXBuildFile; fileRef = 86AB495719FA3DE7006AF1B2 /* ContentManager.cc */; };
+		86AB496019FA3DE7006AF1B2 /* SampleContentServiceMain.cc in Sources */ = {isa = PBXBuildFile; fileRef = 86AB495919FA3DE7006AF1B2 /* SampleContentServiceMain.cc */; };
+		86AB496119FA3DE7006AF1B2 /* SampleContentSource.cc in Sources */ = {isa = PBXBuildFile; fileRef = 86AB495A19FA3DE7006AF1B2 /* SampleContentSource.cc */; };
+		86AB496219FA3DE7006AF1B2 /* StructureParser.cc in Sources */ = {isa = PBXBuildFile; fileRef = 86AB495D19FA3DE7006AF1B2 /* StructureParser.cc */; };
+		86AB496F19FAD827006AF1B2 /* SampleContentService.cc in Sources */ = {isa = PBXBuildFile; fileRef = 86AB496D19FAD827006AF1B2 /* SampleContentService.cc */; };
+		86B2F85619EBD276001BB184 /* liballjoyn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 868D61D519EA57B400A03B1C /* liballjoyn.a */; };
+		86F72C0119F0FFC3003B11AF /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F72C0019F0FFC3003B11AF /* libssl.a */; };
+		86F7358D19F90B8D0012DD44 /* liballjoyn_about.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F7358C19F90B8D0012DD44 /* liballjoyn_about.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		86F8696A19E91F2A00AA41F8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		861ED4CC1A10B684004CEF74 /* BundledRouter.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = BundledRouter.o; path = ../../../../../core/alljoyn/build/darwin/x86/debug/dist/cpp/lib/BundledRouter.o; sourceTree = "<group>"; };
+		863F30DA19FE7047007EB277 /* libmdfContentService.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmdfContentService.a; path = "/Users/grovnick/Library/Developer/Xcode/DerivedData/mdfContent-esltzvzsfbpbxadhlxchheyiyomp/Build/Products/Debug/libmdfContentService.a"; sourceTree = "<absolute>"; };
+		868D61D519EA57B400A03B1C /* liballjoyn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liballjoyn.a; path = ../../../../../core/alljoyn/build/darwin/x86/debug/dist/cpp/lib/liballjoyn.a; sourceTree = "<group>"; };
+		868D61D919EA598A00A03B1C /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "/Users/grovnick/Documents/Projects/OpenSsl/openssl-1.0.1g/Build/Debug/libcrypto.a"; sourceTree = "<absolute>"; };
+		868D61DB19EA5A3900A03B1C /* libc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libc.dylib; path = usr/lib/libc.dylib; sourceTree = SDKROOT; };
+		868D61DD19EA5A7200A03B1C /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		868D61E119EA5B7400A03B1C /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+		868D61E319EA5BFF00A03B1C /* libajrouter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libajrouter.a; path = ../../../../../core/alljoyn/build/darwin/x86/debug/dist/cpp/lib/libajrouter.a; sourceTree = "<group>"; };
+		86AB495719FA3DE7006AF1B2 /* ContentManager.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ContentManager.cc; path = ../samples/SampleContentService/ContentManager.cc; sourceTree = "<group>"; };
+		86AB495819FA3DE7006AF1B2 /* ContentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContentManager.h; path = ../samples/SampleContentService/ContentManager.h; sourceTree = "<group>"; };
+		86AB495919FA3DE7006AF1B2 /* SampleContentServiceMain.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SampleContentServiceMain.cc; path = ../samples/SampleContentService/SampleContentServiceMain.cc; sourceTree = "<group>"; };
+		86AB495A19FA3DE7006AF1B2 /* SampleContentSource.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SampleContentSource.cc; path = ../samples/SampleContentService/SampleContentSource.cc; sourceTree = "<group>"; };
+		86AB495B19FA3DE7006AF1B2 /* SampleContentSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleContentSource.h; path = ../samples/SampleContentService/SampleContentSource.h; sourceTree = "<group>"; };
+		86AB495C19FA3DE7006AF1B2 /* SConscript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SConscript; path = ../samples/SampleContentService/SConscript; sourceTree = "<group>"; };
+		86AB495D19FA3DE7006AF1B2 /* StructureParser.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StructureParser.cc; path = ../samples/SampleContentService/StructureParser.cc; sourceTree = "<group>"; };
+		86AB495E19FA3DE7006AF1B2 /* StructureParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StructureParser.h; path = ../samples/SampleContentService/StructureParser.h; sourceTree = "<group>"; };
+		86AB496D19FAD827006AF1B2 /* SampleContentService.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SampleContentService.cc; path = ../samples/SampleContentService/SampleContentService.cc; sourceTree = "<group>"; };
+		86AB496E19FAD827006AF1B2 /* SampleContentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleContentService.h; path = ../samples/SampleContentService/SampleContentService.h; sourceTree = "<group>"; };
+		86F72C0019F0FFC3003B11AF /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "/Users/grovnick/Documents/Projects/OpenSsl/openssl-1.0.1g/Build/Debug/libssl.a"; sourceTree = "<absolute>"; };
+		86F7358C19F90B8D0012DD44 /* liballjoyn_about.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liballjoyn_about.a; path = ../../../../../core/alljoyn/build/darwin/x86/debug/dist/about/lib/liballjoyn_about.a; sourceTree = "<group>"; };
+		86F8696C19E91F2A00AA41F8 /* sampleContentService */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sampleContentService; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86F8696919E91F2A00AA41F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				863F30DB19FE7047007EB277 /* libmdfContentService.a in Frameworks */,
+				86F7358D19F90B8D0012DD44 /* liballjoyn_about.a in Frameworks */,
+				86F72C0119F0FFC3003B11AF /* libssl.a in Frameworks */,
+				86B2F85619EBD276001BB184 /* liballjoyn.a in Frameworks */,
+				868D61E419EA5BFF00A03B1C /* libajrouter.a in Frameworks */,
+				868D61E219EA5B7400A03B1C /* libstdc++.6.dylib in Frameworks */,
+				868D61DE19EA5A7200A03B1C /* libc++.dylib in Frameworks */,
+				868D61DC19EA5A3900A03B1C /* libc.dylib in Frameworks */,
+				868D61DA19EA598A00A03B1C /* libcrypto.a in Frameworks */,
+				861ED4CD1A10B684004CEF74 /* BundledRouter.o in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		86300A2B1A0178D900320149 /* DataGen */ = {
+			isa = PBXGroup;
+			children = (
+				86AB495E19FA3DE7006AF1B2 /* StructureParser.h */,
+				86AB495D19FA3DE7006AF1B2 /* StructureParser.cc */,
+				86AB495819FA3DE7006AF1B2 /* ContentManager.h */,
+				86AB495719FA3DE7006AF1B2 /* ContentManager.cc */,
+			);
+			name = DataGen;
+			sourceTree = "<group>";
+		};
+		8663D37119F6F05C00B7CC34 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				861ED4CC1A10B684004CEF74 /* BundledRouter.o */,
+				863F30DA19FE7047007EB277 /* libmdfContentService.a */,
+				86F7358C19F90B8D0012DD44 /* liballjoyn_about.a */,
+				868D61E319EA5BFF00A03B1C /* libajrouter.a */,
+				868D61D519EA57B400A03B1C /* liballjoyn.a */,
+				868D61E119EA5B7400A03B1C /* libstdc++.6.dylib */,
+				868D61DD19EA5A7200A03B1C /* libc++.dylib */,
+				868D61DB19EA5A3900A03B1C /* libc.dylib */,
+				868D61D919EA598A00A03B1C /* libcrypto.a */,
+				86F72C0019F0FFC3003B11AF /* libssl.a */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		86AB495619FA3DC2006AF1B2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				86300A2B1A0178D900320149 /* DataGen */,
+				86AB495A19FA3DE7006AF1B2 /* SampleContentSource.cc */,
+				86AB495B19FA3DE7006AF1B2 /* SampleContentSource.h */,
+				86AB496E19FAD827006AF1B2 /* SampleContentService.h */,
+				86AB496D19FAD827006AF1B2 /* SampleContentService.cc */,
+				86AB495919FA3DE7006AF1B2 /* SampleContentServiceMain.cc */,
+				86AB495C19FA3DE7006AF1B2 /* SConscript */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		86F8696319E91F2A00AA41F8 = {
+			isa = PBXGroup;
+			children = (
+				86AB495619FA3DC2006AF1B2 /* src */,
+				8663D37119F6F05C00B7CC34 /* lib */,
+				86F8696D19E91F2A00AA41F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		86F8696D19E91F2A00AA41F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86F8696C19E91F2A00AA41F8 /* sampleContentService */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		86F72C0619F13A77003B11AF /* sampleContentServiceScons */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(SCONSFLAGS) -u OS=darwin CPU=x86 DOCS=html BR=on DB=on WS=off VARIANT=$(CONFIGURATION) --$(ACTION)";
+			buildConfigurationList = 86F72C0719F13A77003B11AF /* Build configuration list for PBXLegacyTarget "sampleContentServiceScons" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/scons;
+			buildWorkingDirectory = ../../../;
+			dependencies = (
+			);
+			name = sampleContentServiceScons;
+			passBuildSettingsInEnvironment = 1;
+			productName = contentService;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		86F8696B19E91F2A00AA41F8 /* sampleContentService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86F8697319E91F2A00AA41F8 /* Build configuration list for PBXNativeTarget "sampleContentService" */;
+			buildPhases = (
+				86F8696819E91F2A00AA41F8 /* Sources */,
+				86F8696919E91F2A00AA41F8 /* Frameworks */,
+				86F8696A19E91F2A00AA41F8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sampleContentService;
+			productName = sampleContentService;
+			productReference = 86F8696C19E91F2A00AA41F8 /* sampleContentService */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86F8696419E91F2A00AA41F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = GMR;
+				TargetAttributes = {
+					86F72C0619F13A77003B11AF = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					86F8696B19E91F2A00AA41F8 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 86F8696719E91F2A00AA41F8 /* Build configuration list for PBXProject "sampleContentService" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 86F8696319E91F2A00AA41F8;
+			productRefGroup = 86F8696D19E91F2A00AA41F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86F8696B19E91F2A00AA41F8 /* sampleContentService */,
+				86F72C0619F13A77003B11AF /* sampleContentServiceScons */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86F8696819E91F2A00AA41F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86AB496219FA3DE7006AF1B2 /* StructureParser.cc in Sources */,
+				86AB496F19FAD827006AF1B2 /* SampleContentService.cc in Sources */,
+				86AB496119FA3DE7006AF1B2 /* SampleContentSource.cc in Sources */,
+				86AB496019FA3DE7006AF1B2 /* SampleContentServiceMain.cc in Sources */,
+				86AB495F19FA3DE7006AF1B2 /* ContentManager.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		86F72C0819F13A77003B11AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		86F72C0919F13A77003B11AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		86F8697119E91F2A00AA41F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+				VALID_ARCHS = i386;
+			};
+			name = Debug;
+		};
+		86F8697219E91F2A00AA41F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VALID_ARCHS = i386;
+			};
+			name = Release;
+		};
+		86F8697419E91F2A00AA41F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"QCC_OS_GROUP_POSIX=1",
+					QCC_OS_DARWIN,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/mdf-gsxarqvbiqbxqfdgncnxlzbearfc/Build/Products/Debug",
+					/data/projects/allseen/core/alljoyn/build/darwin/x86/debug/dist/cpp/lib,
+					/data/projects/allseen/core/alljoyn/build/darwin/x86/debug/dist/about/lib,
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/mdfContent-esltzvzsfbpbxadhlxchheyiyomp/Build/Products/Debug",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../../content/cpp/inc ../../../content/cpp/src ../../../../../core/alljoyn/alljoyn_core/inc ../../../../../core/alljoyn/services/about/cpp/inc ../../../../../services/base/sample_apps/cpp/samples_common ../../../../../services/base/services_common/cpp/inc ../../../../../core/alljoyn/build/darwin/x86/debug/dist/cpp/inc";
+			};
+			name = Debug;
+		};
+		86F8697519E91F2A00AA41F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"QCC_OS_GROUP_POSIX=1",
+					QCC_OS_DARWIN,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/mdf-gsxarqvbiqbxqfdgncnxlzbearfc/Build/Products/Debug",
+					/data/projects/allseen/core/alljoyn/build/darwin/x86/debug/dist/cpp/lib,
+					/data/projects/allseen/core/alljoyn/build/darwin/x86/debug/dist/about/lib,
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/mdfContent-esltzvzsfbpbxadhlxchheyiyomp/Build/Products/Debug",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../../content/cpp/inc ../../../content/cpp/src ../../../../../core/alljoyn/alljoyn_core/inc ../../../../../core/alljoyn/services/about/cpp/inc ../../../../../services/base/sample_apps/cpp/samples_common ../../../../../services/base/services_common/cpp/inc ../../../../../core/alljoyn/build/darwin/x86/debug/dist/cpp/inc";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86F72C0719F13A77003B11AF /* Build configuration list for PBXLegacyTarget "sampleContentServiceScons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86F72C0819F13A77003B11AF /* Debug */,
+				86F72C0919F13A77003B11AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86F8696719E91F2A00AA41F8 /* Build configuration list for PBXProject "sampleContentService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86F8697119E91F2A00AA41F8 /* Debug */,
+				86F8697219E91F2A00AA41F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86F8697319E91F2A00AA41F8 /* Build configuration list for PBXNativeTarget "sampleContentService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86F8697419E91F2A00AA41F8 /* Debug */,
+				86F8697519E91F2A00AA41F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 86F8696419E91F2A00AA41F8 /* Project object */;
+}

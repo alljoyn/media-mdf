@@ -1,0 +1,12 @@
+
+Import('env')
+import os
+
+srcs = env.Glob('*.cc')
+objs = env.Object(srcs)
+
+env.VariantDir('AppCommon', '$APP_COMMON_DIR/cpp/samples_common/', duplicate = 0)
+cobjs = env.SConscript('AppCommon/SConscript', {'env': env})
+objs.extend(cobjs)
+    
+Return('objs')

@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		860A2E0B19ED566000CC5479 /* AdvancedBrowseCommand.cc in Sources */ = {isa = PBXBuildFile; fileRef = 860A2DEF19ED566000CC5479 /* AdvancedBrowseCommand.cc */; };
+		860A2E0C19ED566000CC5479 /* BrowseCommand.cc in Sources */ = {isa = PBXBuildFile; fileRef = 860A2DF119ED566000CC5479 /* BrowseCommand.cc */; };
+		860A2E0D19ED566000CC5479 /* Command.cc in Sources */ = {isa = PBXBuildFile; fileRef = 860A2DF319ED566000CC5479 /* Command.cc */; };
+		860A2E0E19ED566000CC5479 /* CommandUtil.cc in Sources */ = {isa = PBXBuildFile; fileRef = 860A2DF519ED566000CC5479 /* CommandUtil.cc */; };
+		860A2E0F19ED566000CC5479 /* ContentSourceTracker.cc in Sources */ = {isa = PBXBuildFile; fileRef = 860A2DF719ED566000CC5479 /* ContentSourceTracker.cc */; };
+		860A2E1019ED566000CC5479 /* Controller.cc in Sources */ = {isa = PBXBuildFile; fileRef = 860A2DF919ED566000CC5479 /* Controller.cc */; };
+		860A2E1119ED566000CC5479 /* DisplayDevicesCommand.cc in Sources */ = {isa = PBXBuildFile; fileRef = 860A2DFA19ED566000CC5479 /* DisplayDevicesCommand.cc */; };
+		860A2E1219ED566000CC5479 /* ExitCommand.cc in Sources */ = {isa = PBXBuildFile; fileRef = 860A2DFC19ED566000CC5479 /* ExitCommand.cc */; };
+		860A2E1319ED566000CC5479 /* GetContentSourceInfoCommand.cc in Sources */ = {isa = PBXBuildFile; fileRef = 860A2DFE19ED566000CC5479 /* GetContentSourceInfoCommand.cc */; };
+		860A2E1419ED566000CC5479 /* GetItemCommand.cc in Sources */ = {isa = PBXBuildFile; fileRef = 860A2E0019ED566000CC5479 /* GetItemCommand.cc */; };
+		860A2E1519ED566000CC5479 /* GetSortableFieldsCommand.cc in Sources */ = {isa = PBXBuildFile; fileRef = 860A2E0219ED566000CC5479 /* GetSortableFieldsCommand.cc */; };
+		860A2E1619ED566000CC5479 /* Menu.cc in Sources */ = {isa = PBXBuildFile; fileRef = 860A2E0419ED566000CC5479 /* Menu.cc */; };
+		860A2E1719ED566000CC5479 /* SearchCommand.cc in Sources */ = {isa = PBXBuildFile; fileRef = 860A2E0719ED566000CC5479 /* SearchCommand.cc */; };
+		860A2E1819ED566000CC5479 /* SelectContentSource.cc in Sources */ = {isa = PBXBuildFile; fileRef = 860A2E0919ED566000CC5479 /* SelectContentSource.cc */; };
+		868D5CF519E9C8B600A03B1C /* libmdfContentService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 868D5CF419E9C8B600A03B1C /* libmdfContentService.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8665043919E924B400252FBA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		860A2DEF19ED566000CC5479 /* AdvancedBrowseCommand.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = AdvancedBrowseCommand.cc; path = ../../../content/cpp/samples/TestContentServiceClient/AdvancedBrowseCommand.cc; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		860A2DF019ED566000CC5479 /* AdvancedBrowseCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdvancedBrowseCommand.h; path = ../../../content/cpp/samples/TestContentServiceClient/AdvancedBrowseCommand.h; sourceTree = "<group>"; };
+		860A2DF119ED566000CC5479 /* BrowseCommand.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = BrowseCommand.cc; path = ../../../content/cpp/samples/TestContentServiceClient/BrowseCommand.cc; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		860A2DF219ED566000CC5479 /* BrowseCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrowseCommand.h; path = ../../../content/cpp/samples/TestContentServiceClient/BrowseCommand.h; sourceTree = "<group>"; };
+		860A2DF319ED566000CC5479 /* Command.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Command.cc; path = ../../../content/cpp/samples/TestContentServiceClient/Command.cc; sourceTree = "<group>"; };
+		860A2DF419ED566000CC5479 /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Command.h; path = ../../../content/cpp/samples/TestContentServiceClient/Command.h; sourceTree = "<group>"; };
+		860A2DF519ED566000CC5479 /* CommandUtil.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CommandUtil.cc; path = ../../../content/cpp/samples/TestContentServiceClient/CommandUtil.cc; sourceTree = "<group>"; };
+		860A2DF619ED566000CC5479 /* CommandUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommandUtil.h; path = ../../../content/cpp/samples/TestContentServiceClient/CommandUtil.h; sourceTree = "<group>"; };
+		860A2DF719ED566000CC5479 /* ContentSourceTracker.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ContentSourceTracker.cc; path = ../../../content/cpp/samples/TestContentServiceClient/ContentSourceTracker.cc; sourceTree = "<group>"; };
+		860A2DF819ED566000CC5479 /* ContentSourceTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContentSourceTracker.h; path = ../../../content/cpp/samples/TestContentServiceClient/ContentSourceTracker.h; sourceTree = "<group>"; };
+		860A2DF919ED566000CC5479 /* Controller.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Controller.cc; path = ../../../content/cpp/samples/TestContentServiceClient/Controller.cc; sourceTree = "<group>"; };
+		860A2DFA19ED566000CC5479 /* DisplayDevicesCommand.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DisplayDevicesCommand.cc; path = ../../../content/cpp/samples/TestContentServiceClient/DisplayDevicesCommand.cc; sourceTree = "<group>"; };
+		860A2DFB19ED566000CC5479 /* DisplayDevicesCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DisplayDevicesCommand.h; path = ../../../content/cpp/samples/TestContentServiceClient/DisplayDevicesCommand.h; sourceTree = "<group>"; };
+		860A2DFC19ED566000CC5479 /* ExitCommand.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ExitCommand.cc; path = ../../../content/cpp/samples/TestContentServiceClient/ExitCommand.cc; sourceTree = "<group>"; };
+		860A2DFD19ED566000CC5479 /* ExitCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExitCommand.h; path = ../../../content/cpp/samples/TestContentServiceClient/ExitCommand.h; sourceTree = "<group>"; };
+		860A2DFE19ED566000CC5479 /* GetContentSourceInfoCommand.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = GetContentSourceInfoCommand.cc; path = ../../../content/cpp/samples/TestContentServiceClient/GetContentSourceInfoCommand.cc; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		860A2DFF19ED566000CC5479 /* GetContentSourceInfoCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GetContentSourceInfoCommand.h; path = ../../../content/cpp/samples/TestContentServiceClient/GetContentSourceInfoCommand.h; sourceTree = "<group>"; };
+		860A2E0019ED566000CC5479 /* GetItemCommand.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GetItemCommand.cc; path = ../../../content/cpp/samples/TestContentServiceClient/GetItemCommand.cc; sourceTree = "<group>"; };
+		860A2E0119ED566000CC5479 /* GetItemCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GetItemCommand.h; path = ../../../content/cpp/samples/TestContentServiceClient/GetItemCommand.h; sourceTree = "<group>"; };
+		860A2E0219ED566000CC5479 /* GetSortableFieldsCommand.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GetSortableFieldsCommand.cc; path = ../../../content/cpp/samples/TestContentServiceClient/GetSortableFieldsCommand.cc; sourceTree = "<group>"; };
+		860A2E0319ED566000CC5479 /* GetSortableFieldsCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GetSortableFieldsCommand.h; path = ../../../content/cpp/samples/TestContentServiceClient/GetSortableFieldsCommand.h; sourceTree = "<group>"; };
+		860A2E0419ED566000CC5479 /* Menu.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Menu.cc; path = ../../../content/cpp/samples/TestContentServiceClient/Menu.cc; sourceTree = "<group>"; };
+		860A2E0519ED566000CC5479 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Menu.h; path = ../../../content/cpp/samples/TestContentServiceClient/Menu.h; sourceTree = "<group>"; };
+		860A2E0619ED566000CC5479 /* SConscript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SConscript; path = ../../../content/cpp/samples/TestContentServiceClient/SConscript; sourceTree = "<group>"; };
+		860A2E0719ED566000CC5479 /* SearchCommand.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = SearchCommand.cc; path = ../../../content/cpp/samples/TestContentServiceClient/SearchCommand.cc; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		860A2E0819ED566000CC5479 /* SearchCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchCommand.h; path = ../../../content/cpp/samples/TestContentServiceClient/SearchCommand.h; sourceTree = "<group>"; };
+		860A2E0919ED566000CC5479 /* SelectContentSource.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SelectContentSource.cc; path = ../../../content/cpp/samples/TestContentServiceClient/SelectContentSource.cc; sourceTree = "<group>"; };
+		860A2E0A19ED566000CC5479 /* SelectContentSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectContentSource.h; path = ../../../content/cpp/samples/TestContentServiceClient/SelectContentSource.h; sourceTree = "<group>"; };
+		8665043B19E924B400252FBA /* testContentServiceClient */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testContentServiceClient; sourceTree = BUILT_PRODUCTS_DIR; };
+		868D5CF419E9C8B600A03B1C /* libmdfContentService.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmdfContentService.a; path = "../../../../../../../../../Users/grovnick/Library/Developer/Xcode/DerivedData/mdf-gsxarqvbiqbxqfdgncnxlzbearfc/Build/Products/Debug/libmdfContentService.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8665043819E924B400252FBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				868D5CF519E9C8B600A03B1C /* libmdfContentService.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8665043219E924B400252FBA = {
+			isa = PBXGroup;
+			children = (
+				868D5CF419E9C8B600A03B1C /* libmdfContentService.a */,
+				8665043D19E924B400252FBA /* testContentServiceClient */,
+				8665043C19E924B400252FBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8665043C19E924B400252FBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8665043B19E924B400252FBA /* testContentServiceClient */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8665043D19E924B400252FBA /* testContentServiceClient */ = {
+			isa = PBXGroup;
+			children = (
+				860A2DEF19ED566000CC5479 /* AdvancedBrowseCommand.cc */,
+				860A2DF019ED566000CC5479 /* AdvancedBrowseCommand.h */,
+				860A2DF119ED566000CC5479 /* BrowseCommand.cc */,
+				860A2DF219ED566000CC5479 /* BrowseCommand.h */,
+				860A2DF319ED566000CC5479 /* Command.cc */,
+				860A2DF419ED566000CC5479 /* Command.h */,
+				860A2DF519ED566000CC5479 /* CommandUtil.cc */,
+				860A2DF619ED566000CC5479 /* CommandUtil.h */,
+				860A2DF719ED566000CC5479 /* ContentSourceTracker.cc */,
+				860A2DF819ED566000CC5479 /* ContentSourceTracker.h */,
+				860A2DF919ED566000CC5479 /* Controller.cc */,
+				860A2DFA19ED566000CC5479 /* DisplayDevicesCommand.cc */,
+				860A2DFB19ED566000CC5479 /* DisplayDevicesCommand.h */,
+				860A2DFC19ED566000CC5479 /* ExitCommand.cc */,
+				860A2DFD19ED566000CC5479 /* ExitCommand.h */,
+				860A2DFE19ED566000CC5479 /* GetContentSourceInfoCommand.cc */,
+				860A2DFF19ED566000CC5479 /* GetContentSourceInfoCommand.h */,
+				860A2E0019ED566000CC5479 /* GetItemCommand.cc */,
+				860A2E0119ED566000CC5479 /* GetItemCommand.h */,
+				860A2E0219ED566000CC5479 /* GetSortableFieldsCommand.cc */,
+				860A2E0319ED566000CC5479 /* GetSortableFieldsCommand.h */,
+				860A2E0419ED566000CC5479 /* Menu.cc */,
+				860A2E0519ED566000CC5479 /* Menu.h */,
+				860A2E0619ED566000CC5479 /* SConscript */,
+				860A2E0719ED566000CC5479 /* SearchCommand.cc */,
+				860A2E0819ED566000CC5479 /* SearchCommand.h */,
+				860A2E0919ED566000CC5479 /* SelectContentSource.cc */,
+				860A2E0A19ED566000CC5479 /* SelectContentSource.h */,
+			);
+			path = testContentServiceClient;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8665043A19E924B400252FBA /* testContentServiceClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8665044219E924B400252FBA /* Build configuration list for PBXNativeTarget "testContentServiceClient" */;
+			buildPhases = (
+				8665043719E924B400252FBA /* Sources */,
+				8665043819E924B400252FBA /* Frameworks */,
+				8665043919E924B400252FBA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testContentServiceClient;
+			productName = testContentServiceClient;
+			productReference = 8665043B19E924B400252FBA /* testContentServiceClient */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8665043319E924B400252FBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = GMR;
+				TargetAttributes = {
+					8665043A19E924B400252FBA = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 8665043619E924B400252FBA /* Build configuration list for PBXProject "testContentServiceClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8665043219E924B400252FBA;
+			productRefGroup = 8665043C19E924B400252FBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8665043A19E924B400252FBA /* testContentServiceClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8665043719E924B400252FBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				860A2E1619ED566000CC5479 /* Menu.cc in Sources */,
+				860A2E0F19ED566000CC5479 /* ContentSourceTracker.cc in Sources */,
+				860A2E1819ED566000CC5479 /* SelectContentSource.cc in Sources */,
+				860A2E1519ED566000CC5479 /* GetSortableFieldsCommand.cc in Sources */,
+				860A2E0B19ED566000CC5479 /* AdvancedBrowseCommand.cc in Sources */,
+				860A2E0C19ED566000CC5479 /* BrowseCommand.cc in Sources */,
+				860A2E1719ED566000CC5479 /* SearchCommand.cc in Sources */,
+				860A2E1219ED566000CC5479 /* ExitCommand.cc in Sources */,
+				860A2E0D19ED566000CC5479 /* Command.cc in Sources */,
+				860A2E1419ED566000CC5479 /* GetItemCommand.cc in Sources */,
+				860A2E1319ED566000CC5479 /* GetContentSourceInfoCommand.cc in Sources */,
+				860A2E0E19ED566000CC5479 /* CommandUtil.cc in Sources */,
+				860A2E1119ED566000CC5479 /* DisplayDevicesCommand.cc in Sources */,
+				860A2E1019ED566000CC5479 /* Controller.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8665044019E924B400252FBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8665044119E924B400252FBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8665044319E924B400252FBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"QCC_OS_GROUP_POSIX=1",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/mdf-gsxarqvbiqbxqfdgncnxlzbearfc/Build/Products/Debug",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../../content/cpp/inc ../../../../../core/alljoyn/common/inc ../../../../../core/alljoyn/alljoyn_core/inc ../../../../../services/base/sample_apps/cpp/samples_common ../../../../../core/alljoyn/services/about/cpp/inc";
+			};
+			name = Debug;
+		};
+		8665044419E924B400252FBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "QCC_OS_GROUP_POSIX=1";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/mdf-gsxarqvbiqbxqfdgncnxlzbearfc/Build/Products/Debug",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../../content/cpp/inc ../../../../../core/alljoyn/common/inc ../../../../../core/alljoyn/alljoyn_core/inc ../../../../../services/base/sample_apps/cpp/samples_common ../../../../../core/alljoyn/services/about/cpp/inc";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8665043619E924B400252FBA /* Build configuration list for PBXProject "testContentServiceClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8665044019E924B400252FBA /* Debug */,
+				8665044119E924B400252FBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8665044219E924B400252FBA /* Build configuration list for PBXNativeTarget "testContentServiceClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8665044319E924B400252FBA /* Debug */,
+				8665044419E924B400252FBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8665043319E924B400252FBA /* Project object */;
+}

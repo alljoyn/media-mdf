@@ -1,0 +1,51 @@
+
+import os
+
+Import('env')
+
+env['_ALLJOYN_MEDIA_CONTENT_'] = True
+#env['_ALLJOYN_BUNDLED_ROUTER_'] = True
+
+allJoynBasePath = '../../../core/alljoyn/'
+servicesBasePath = '../../../services/base/'
+
+# Make config library and header file paths available to the global environment
+print 'mdfContentService Append LIBPATH & CPPPATH'
+env.Append(LIBPATH = '$DISTDIR/media/content/lib');
+env.Append(CPPPATH = '$DISTDIR/media/content/inc');
+
+def checkBuild(name, fullPath):
+    print ' '
+    print '====================================='
+    print 'mdfContentService checking ' + name + ' at ' + fullPath
+    if not env.has_key(name) and os.path.exists(fullPath):
+        print 'Building ' + name
+        env.SConscript(fullPath)
+
+def checkAllJoynBuilds(name, path):
+    fullPath = allJoynBasePath + path
+    checkBuild(name,fullPath)
+
+def checkServicesBuilds(name, path):
+    fullPath = servicesBasePath + path
+    checkBuild(name,fullPath)
+
+if 'cpp' in env['bindings']:
+    checkAllJoynBuilds('_ALLJOYNCORE_','alljoyn_core/SConscript')
+
+checkAllJoynBuilds('_ALLJOYN_ABOUT_','services/about/SConscript')
+checkServicesBuilds('_ALLJOYN_SERVICES_COMMON_','services_common/SConscript')
+
+if 'java' in env['bindings']:
+    checkAllJoynBuilds('_ALLJOYN_JAVA_','alljoyn_java/SConscript')
+
+contsenv = env.Clone()
+#contsenv.Append(CCFLAGS='-Wall -Wextra -O0 -ggdb');
+
+for b in contsenv['bindings']:
+    if os.path.exists('%s/SConscript' % b):
+        contsenv.VariantDir('$OBJDIR/%s' % b, b, duplicate = 0)
+
+contsenv.SConscript(['$OBJDIR/%s/SConscript' % b for b in env['bindings'] if os.path.exists('%s/SConscript' % b) ],
+                 exports = ['contsenv'])
+

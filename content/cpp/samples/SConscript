@@ -1,0 +1,37 @@
+
+Import('contsenv')
+
+samples_env = contsenv.Clone()
+
+print '\n\n\n===================== contsenv.Dictionary ========================'
+#dict = contsenv.Dictionary()
+#keys = dict.keys()
+#keys.sort()
+#for key in keys:
+#    print "construction variable = '%s', value = '%s'" % (key, dict[key])
+#print '===================== contsenv.Dictionary ========================\n\n\n'
+
+
+samples_env.Append(CPPPATH = samples_env.Dir('common').srcnode())
+samples_env.Append(CPPPATH = samples_env.Dir('$APP_COMMON_DIR/cpp/samples_common').srcnode())
+samples_env.Append(CPPDEFINES = 'USE_SAMPLE_LOGGER')
+samples_env.Prepend(LIBS = ['alljoyn_media_content', 'alljoyn_about', 'alljoyn_services_common'])
+
+if samples_env['BR'] == 'on' and samples_env.has_key('bdobj') and samples_env.has_key('bdlib'):
+    # Build apps with bundled daemon support
+    samples_env.Prepend(LIBS = [samples_env['bdobj'], samples_env['bdlib']])
+    samples_env.Append(CPPDEFINES='QCC_USING_BD')
+
+cobjs = samples_env.SConscript('common/SConscript', {'env': samples_env})
+
+sample_dirs = [
+    'SampleContentService',
+    'SampleContentServiceClient'
+    ]
+
+
+exports = { 'env':samples_env, 'cobjs': cobjs }
+
+progs = [ samples_env.SConscript('%s/SConscript' % sampleapp, exports = exports) for sampleapp in sample_dirs ]
+
+Return('progs')

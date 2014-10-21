@@ -1,0 +1,6 @@
+build
+xcuserdata
+xcshareddata
+.sconsign.dblite
+.DS_Store
+whitespace.db

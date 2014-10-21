@@ -1,0 +1,39 @@
+
+import os
+
+Import('contsenv')
+ 
+print '\n\n\n===================== _ALLJOYNCORE_ ========================'
+if not contsenv.has_key('_ALLJOYNCORE_'):
+    print '\n\n\n===================== In _ALLJOYNCORE_ ========================'
+    contsenv.Append(LIBS = ['alljoyn'])
+    if contsenv['BD'] == 'on' :
+        print 'Added BundledDaemon'
+        bdFile = contsenv.subst('$DISTDIR') + '/cpp/lib/BundledDaemon.o'
+        contsenv['bdobj'] = File(bdFile)
+        contsenv['bdlib'] = 'ajdaemon'
+    if contsenv['OS'] == 'openwrt':
+        contsenv.AppendUnique(LIBS = [ 'stdc++', 'pthread' ])
+
+contsenv['CONTS_DISTDIR'] = contsenv['DISTDIR'] + '/media/content'
+
+contsenv.Install('$CONTS_DISTDIR/inc/', contsenv.Glob('inc/*.h'))
+contsenv.Install('$CONTS_DISTDIR/lib', contsenv.SConscript('src/SConscript', exports = ['contsenv']))
+
+print '\n\n\n===================== brobj not added ========================'
+#contsenv.Prepend(LIBS = [contsenv['brobj'], contsenv['ajrlib']])
+
+
+if contsenv['BUILD_SERVICES_SAMPLES'] == 'on':
+    contsenv.Install('$CONTS_DISTDIR/bin', contsenv.SConscript('samples/SConscript', exports = ['contsenv']))
+
+#The command line takes priority to a enriroment variable
+vars = Variables()
+
+vars.Update(contsenv)
+
+print("After statement")
+
+# Build docs
+installDocs = contsenv.SConscript('docs/SConscript', exports = ['contsenv'])
+contsenv.Depends(installDocs, contsenv.Glob('$CONTS_DISTDIR/inc/*.h'));

@@ -1,0 +1,16 @@
+
+print 'Building sampleContentSerivce'
+
+Import('env', 'cobjs')
+
+srcs = env.Glob('*.cc')
+objs = env.Object(srcs)
+objs.extend(cobjs)
+
+print '\n\n\n===================== cobjs ========================'
+for fff in cobjs:
+    print "files = '%s'" % (fff)
+
+prog = env.Program('SampleContentService', objs)
+
+Return('prog')

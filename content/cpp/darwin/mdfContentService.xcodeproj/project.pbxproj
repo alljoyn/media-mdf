@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8628664D19F533B6005B757D /* MdfContentSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 8628664C19F533B6005B757D /* MdfContentSource.h */; };
+		86300A321A01801700320149 /* ContentServerBusObject.cc in Sources */ = {isa = PBXBuildFile; fileRef = 86300A311A01801700320149 /* ContentServerBusObject.cc */; };
+		86300A351A01803C00320149 /* ContentServerBusObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 86300A341A01803C00320149 /* ContentServerBusObject.h */; };
+		86300A3C1A02683D00320149 /* ContentSessionListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 86300A3A1A02683D00320149 /* ContentSessionListener.h */; };
+		86300A3D1A02683D00320149 /* ContentSessionPortListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 86300A3B1A02683D00320149 /* ContentSessionPortListener.h */; };
+		86300A401A02691300320149 /* ContentSessionListener.cc in Sources */ = {isa = PBXBuildFile; fileRef = 86300A3E1A02691300320149 /* ContentSessionListener.cc */; };
+		86300A411A02691300320149 /* ContentSessionPortListener.cc in Sources */ = {isa = PBXBuildFile; fileRef = 86300A3F1A02691300320149 /* ContentSessionPortListener.cc */; };
+		86300A441A03D29000320149 /* ContentBusListenerClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 86300A431A03D29000320149 /* ContentBusListenerClient.h */; };
+		86300A471A03D2D000320149 /* ContentBusListenerClient.cc in Sources */ = {isa = PBXBuildFile; fileRef = 86300A461A03D2D000320149 /* ContentBusListenerClient.cc */; };
+		86300A491A041C4B00320149 /* ContentSessionListenerClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 86300A481A041C4B00320149 /* ContentSessionListenerClient.h */; };
+		86300A4B1A041C6600320149 /* ContentSessionListenerClient.cc in Sources */ = {isa = PBXBuildFile; fileRef = 86300A4A1A041C6600320149 /* ContentSessionListenerClient.cc */; };
+		863AB68319F4CD87006FBF53 /* StringUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 863AB68219F4CD87006FBF53 /* StringUtils.h */; };
+		863F30DE19FE7A84007EB277 /* ContentBusListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 863F30DC19FE7A84007EB277 /* ContentBusListener.h */; };
+		864609541A0CB11200FB1A60 /* ContentSourceClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 864609521A0CB11200FB1A60 /* ContentSourceClient.h */; };
+		864609561A0CB16D00FB1A60 /* ContentSourceClient.cc in Sources */ = {isa = PBXBuildFile; fileRef = 864609551A0CB16D00FB1A60 /* ContentSourceClient.cc */; };
+		865DE1E11A07A87A00FB7B38 /* ContentProxyBusObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 865DE1E01A07A87A00FB7B38 /* ContentProxyBusObject.h */; };
+		865DE1E31A07A88600FB7B38 /* ContentProxyBusObject.cc in Sources */ = {isa = PBXBuildFile; fileRef = 865DE1E21A07A88600FB7B38 /* ContentProxyBusObject.cc */; };
+		86AEB48019D1C58600C681E8 /* ContentConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 86AE962519D1C54E00C681E8 /* ContentConstants.h */; };
+		86AEB48519D1C58600C681E8 /* ContentSourceListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 86AE962A19D1C54E00C681E8 /* ContentSourceListener.h */; };
+		86AEB48919D1C58600C681E8 /* LogModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 86AE962E19D1C54E00C681E8 /* LogModule.h */; };
+		86AEB48B19D1C58600C681E8 /* Node.h in Headers */ = {isa = PBXBuildFile; fileRef = 86AE963019D1C54E00C681E8 /* Node.h */; };
+		86AECB5319D1C58D00C681E8 /* ContentBusListener.cc in Sources */ = {isa = PBXBuildFile; fileRef = 86AEB45E19D1C58600C681E8 /* ContentBusListener.cc */; };
+		86AECB5B19D1C58D00C681E8 /* ContentServiceSessionHandler.cc in Sources */ = {isa = PBXBuildFile; fileRef = 86AEB46619D1C58600C681E8 /* ContentServiceSessionHandler.cc */; };
+		86AECB5C19D1C58D00C681E8 /* ContentServiceSessionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 86AEB46719D1C58600C681E8 /* ContentServiceSessionHandler.h */; };
+		86AECB6219D1C58D00C681E8 /* Node.cc in Sources */ = {isa = PBXBuildFile; fileRef = 86AEB46D19D1C58600C681E8 /* Node.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8628664C19F533B6005B757D /* MdfContentSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MdfContentSource.h; sourceTree = "<group>"; };
+		86300A311A01801700320149 /* ContentServerBusObject.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ContentServerBusObject.cc; sourceTree = "<group>"; };
+		86300A341A01803C00320149 /* ContentServerBusObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentServerBusObject.h; sourceTree = "<group>"; };
+		86300A3A1A02683D00320149 /* ContentSessionListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentSessionListener.h; sourceTree = "<group>"; };
+		86300A3B1A02683D00320149 /* ContentSessionPortListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentSessionPortListener.h; sourceTree = "<group>"; };
+		86300A3E1A02691300320149 /* ContentSessionListener.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ContentSessionListener.cc; sourceTree = "<group>"; };
+		86300A3F1A02691300320149 /* ContentSessionPortListener.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ContentSessionPortListener.cc; sourceTree = "<group>"; };
+		86300A431A03D29000320149 /* ContentBusListenerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentBusListenerClient.h; sourceTree = "<group>"; };
+		86300A461A03D2D000320149 /* ContentBusListenerClient.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ContentBusListenerClient.cc; sourceTree = "<group>"; };
+		86300A481A041C4B00320149 /* ContentSessionListenerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentSessionListenerClient.h; sourceTree = "<group>"; };
+		86300A4A1A041C6600320149 /* ContentSessionListenerClient.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ContentSessionListenerClient.cc; sourceTree = "<group>"; };
+		86300A4C1A0511B200320149 /* SConstruct */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SConstruct; path = ../../../SConstruct; sourceTree = "<group>"; };
+		863AB68219F4CD87006FBF53 /* StringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtils.h; sourceTree = "<group>"; };
+		863F30DC19FE7A84007EB277 /* ContentBusListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentBusListener.h; sourceTree = "<group>"; };
+		864609521A0CB11200FB1A60 /* ContentSourceClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentSourceClient.h; sourceTree = "<group>"; };
+		864609551A0CB16D00FB1A60 /* ContentSourceClient.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ContentSourceClient.cc; sourceTree = "<group>"; };
+		865DE1E01A07A87A00FB7B38 /* ContentProxyBusObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentProxyBusObject.h; sourceTree = "<group>"; };
+		865DE1E21A07A88600FB7B38 /* ContentProxyBusObject.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ContentProxyBusObject.cc; sourceTree = "<group>"; };
+		86AE961319D1C4D000C681E8 /* libmdfContentService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmdfContentService.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		86AE962519D1C54E00C681E8 /* ContentConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentConstants.h; sourceTree = "<group>"; };
+		86AE962A19D1C54E00C681E8 /* ContentSourceListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentSourceListener.h; sourceTree = "<group>"; };
+		86AE962E19D1C54E00C681E8 /* LogModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogModule.h; sourceTree = "<group>"; };
+		86AE963019D1C54E00C681E8 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Node.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		86AEB44819D1C58500C681E8 /* SConscript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; path = SConscript; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = "<none>"; };
+		86AEB45719D1C58500C681E8 /* SConscript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SConscript; sourceTree = "<group>"; };
+		86AEB45E19D1C58600C681E8 /* ContentBusListener.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ContentBusListener.cc; sourceTree = "<group>"; };
+		86AEB46619D1C58600C681E8 /* ContentServiceSessionHandler.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ContentServiceSessionHandler.cc; sourceTree = "<group>"; };
+		86AEB46719D1C58600C681E8 /* ContentServiceSessionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentServiceSessionHandler.h; sourceTree = "<group>"; };
+		86AEB46D19D1C58600C681E8 /* Node.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = Node.cc; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		86AEB46F19D1C58600C681E8 /* SConscript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SConscript; sourceTree = "<group>"; };
+		86AEB47B19D1C58600C681E8 /* SConscript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SConscript; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86AE961019D1C4D000C681E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		86300A301A017F8F00320149 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				86AEB45E19D1C58600C681E8 /* ContentBusListener.cc */,
+				86300A3E1A02691300320149 /* ContentSessionListener.cc */,
+				86300A3F1A02691300320149 /* ContentSessionPortListener.cc */,
+				86300A311A01801700320149 /* ContentServerBusObject.cc */,
+			);
+			name = Server;
+			sourceTree = "<group>";
+		};
+		86300A331A01802700320149 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				863F30DC19FE7A84007EB277 /* ContentBusListener.h */,
+				86300A3A1A02683D00320149 /* ContentSessionListener.h */,
+				86300A3B1A02683D00320149 /* ContentSessionPortListener.h */,
+				86300A341A01803C00320149 /* ContentServerBusObject.h */,
+			);
+			name = Server;
+			sourceTree = "<group>";
+		};
+		86300A421A03D22800320149 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				865DE1E01A07A87A00FB7B38 /* ContentProxyBusObject.h */,
+				86300A481A041C4B00320149 /* ContentSessionListenerClient.h */,
+				86300A431A03D29000320149 /* ContentBusListenerClient.h */,
+				864609521A0CB11200FB1A60 /* ContentSourceClient.h */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		86300A451A03D29B00320149 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				864609551A0CB16D00FB1A60 /* ContentSourceClient.cc */,
+				86300A4A1A041C6600320149 /* ContentSessionListenerClient.cc */,
+				86300A461A03D2D000320149 /* ContentBusListenerClient.cc */,
+				865DE1E21A07A88600FB7B38 /* ContentProxyBusObject.cc */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		863AB67E19F4C977006FBF53 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				86AEB46D19D1C58600C681E8 /* Node.cc */,
+			);
+			name = Nodes;
+			sourceTree = "<group>";
+		};
+		863AB68019F4CD45006FBF53 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				86AE963019D1C54E00C681E8 /* Node.h */,
+			);
+			name = Nodes;
+			sourceTree = "<group>";
+		};
+		863AB68119F4CD73006FBF53 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				863AB68219F4CD87006FBF53 /* StringUtils.h */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		863AB68519F4D0B6006FBF53 /* ajn */ = {
+			isa = PBXGroup;
+			children = (
+				86AEB46619D1C58600C681E8 /* ContentServiceSessionHandler.cc */,
+				86AEB46719D1C58600C681E8 /* ContentServiceSessionHandler.h */,
+			);
+			name = ajn;
+			sourceTree = "<group>";
+		};
+		86AE960A19D1C4D000C681E8 = {
+			isa = PBXGroup;
+			children = (
+				86300A4C1A0511B200320149 /* SConstruct */,
+				86AE961A19D1C54E00C681E8 /* content */,
+				86AE961419D1C4D000C681E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		86AE961419D1C4D000C681E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86AE961319D1C4D000C681E8 /* libmdfContentService.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86AE961A19D1C54E00C681E8 /* content */ = {
+			isa = PBXGroup;
+			children = (
+				86AE961B19D1C54E00C681E8 /* cpp */,
+				86AEB47B19D1C58600C681E8 /* SConscript */,
+			);
+			name = content;
+			path = ../../../content;
+			sourceTree = "<group>";
+		};
+		86AE961B19D1C54E00C681E8 /* cpp */ = {
+			isa = PBXGroup;
+			children = (
+				86AE962019D1C54E00C681E8 /* inc */,
+				86AE963619D1C54E00C681E8 /* samples */,
+				86AEB45719D1C58500C681E8 /* SConscript */,
+				86AEB45819D1C58500C681E8 /* src */,
+			);
+			path = cpp;
+			sourceTree = "<group>";
+		};
+		86AE962019D1C54E00C681E8 /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				86300A421A03D22800320149 /* Client */,
+				86300A331A01802700320149 /* Server */,
+				863AB68119F4CD73006FBF53 /* Utils */,
+				863AB68019F4CD45006FBF53 /* Nodes */,
+				8628664C19F533B6005B757D /* MdfContentSource.h */,
+				86AE962519D1C54E00C681E8 /* ContentConstants.h */,
+				86AE962A19D1C54E00C681E8 /* ContentSourceListener.h */,
+				86AE962E19D1C54E00C681E8 /* LogModule.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		86AE963619D1C54E00C681E8 /* samples */ = {
+			isa = PBXGroup;
+			children = (
+				86AEB44819D1C58500C681E8 /* SConscript */,
+			);
+			path = samples;
+			sourceTree = "<group>";
+		};
+		86AEB45819D1C58500C681E8 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				86300A451A03D29B00320149 /* Client */,
+				86300A301A017F8F00320149 /* Server */,
+				863AB68519F4D0B6006FBF53 /* ajn */,
+				863AB67E19F4C977006FBF53 /* Nodes */,
+				86AEB46F19D1C58600C681E8 /* SConscript */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		86AE961119D1C4D000C681E8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				863F30DE19FE7A84007EB277 /* ContentBusListener.h in Headers */,
+				86AEB48019D1C58600C681E8 /* ContentConstants.h in Headers */,
+				86300A441A03D29000320149 /* ContentBusListenerClient.h in Headers */,
+				86AEB48B19D1C58600C681E8 /* Node.h in Headers */,
+				86AECB5C19D1C58D00C681E8 /* ContentServiceSessionHandler.h in Headers */,
+				863AB68319F4CD87006FBF53 /* StringUtils.h in Headers */,
+				86300A351A01803C00320149 /* ContentServerBusObject.h in Headers */,
+				86300A491A041C4B00320149 /* ContentSessionListenerClient.h in Headers */,
+				86AEB48519D1C58600C681E8 /* ContentSourceListener.h in Headers */,
+				86AEB48919D1C58600C681E8 /* LogModule.h in Headers */,
+				86300A3D1A02683D00320149 /* ContentSessionPortListener.h in Headers */,
+				864609541A0CB11200FB1A60 /* ContentSourceClient.h in Headers */,
+				865DE1E11A07A87A00FB7B38 /* ContentProxyBusObject.h in Headers */,
+				86300A3C1A02683D00320149 /* ContentSessionListener.h in Headers */,
+				8628664D19F533B6005B757D /* MdfContentSource.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXLegacyTarget section */
+		86F72C0219F105EE003B11AF /* mdfContentServiceScons */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(SCONSFLAGS) -u OS=darwin CPU=x86 DOCS=html BR=on DB=on WS=off VARIANT=$(CONFIGURATION) --$(ACTION)";
+			buildConfigurationList = 86F72C0319F105EE003B11AF /* Build configuration list for PBXLegacyTarget "mdfContentServiceScons" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/scons;
+			buildWorkingDirectory = ../../../;
+			dependencies = (
+			);
+			name = mdfContentServiceScons;
+			passBuildSettingsInEnvironment = 1;
+			productName = mdf;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		86AE961219D1C4D000C681E8 /* mdfContentService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86AE961719D1C4D000C681E8 /* Build configuration list for PBXNativeTarget "mdfContentService" */;
+			buildPhases = (
+				86AE960F19D1C4D000C681E8 /* Sources */,
+				86AE961019D1C4D000C681E8 /* Frameworks */,
+				86AE961119D1C4D000C681E8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mdfContentService;
+			productName = mdfContentService;
+			productReference = 86AE961319D1C4D000C681E8 /* libmdfContentService.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86AE960B19D1C4D000C681E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "AllSeen Alliance";
+				TargetAttributes = {
+					86AE961219D1C4D000C681E8 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					86F72C0219F105EE003B11AF = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 86AE960E19D1C4D000C681E8 /* Build configuration list for PBXProject "mdfContentService" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 86AE960A19D1C4D000C681E8;
+			productRefGroup = 86AE961419D1C4D000C681E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86AE961219D1C4D000C681E8 /* mdfContentService */,
+				86F72C0219F105EE003B11AF /* mdfContentServiceScons */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86AE960F19D1C4D000C681E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86300A411A02691300320149 /* ContentSessionPortListener.cc in Sources */,
+				86300A401A02691300320149 /* ContentSessionListener.cc in Sources */,
+				86300A321A01801700320149 /* ContentServerBusObject.cc in Sources */,
+				864609561A0CB16D00FB1A60 /* ContentSourceClient.cc in Sources */,
+				865DE1E31A07A88600FB7B38 /* ContentProxyBusObject.cc in Sources */,
+				86AECB6219D1C58D00C681E8 /* Node.cc in Sources */,
+				86300A471A03D2D000320149 /* ContentBusListenerClient.cc in Sources */,
+				86AECB5B19D1C58D00C681E8 /* ContentServiceSessionHandler.cc in Sources */,
+				86300A4B1A041C6600320149 /* ContentSessionListenerClient.cc in Sources */,
+				86AECB5319D1C58D00C681E8 /* ContentBusListener.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		86AE961519D1C4D000C681E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "QCC_OS_GROUP_POSIX=1";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Debug;
+		};
+		86AE961619D1C4D000C681E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = "QCC_OS_GROUP_POSIX=1";
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Release;
+		};
+		86AE961819D1C4D000C681E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../../../../core/alljoyn/services/about/cpp/inc,
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../../../../core/alljoyn/alljoyn_core/inc ../../../../../core/alljoyn/common/inc ../../../../../core/alljoyn/build/darwin/x86/debug/dist/cpp/inc ../../../../../core/alljoyn/services/about/cpp/inc";
+			};
+			name = Debug;
+		};
+		86AE961919D1C4D000C681E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../../../../core/alljoyn/services/about/cpp/inc,
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../../../../core/alljoyn/alljoyn_core/inc ../../../../../core/alljoyn/common/inc ../../../../../core/alljoyn/build/darwin/x86/debug/dist/cpp/inc ../../../../../core/alljoyn/services/about/cpp/inc";
+			};
+			name = Release;
+		};
+		86F72C0419F105EE003B11AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++11";
+				DEBUGGING_SYMBOLS = YES;
+				GCC_ENAMBLE_CPP_RTTI = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		86F72C0519F105EE003B11AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++11";
+				GCC_ENAMBLE_CPP_RTTI = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86AE960E19D1C4D000C681E8 /* Build configuration list for PBXProject "mdfContentService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86AE961519D1C4D000C681E8 /* Debug */,
+				86AE961619D1C4D000C681E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86AE961719D1C4D000C681E8 /* Build configuration list for PBXNativeTarget "mdfContentService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86AE961819D1C4D000C681E8 /* Debug */,
+				86AE961919D1C4D000C681E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86F72C0319F105EE003B11AF /* Build configuration list for PBXLegacyTarget "mdfContentServiceScons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86F72C0419F105EE003B11AF /* Debug */,
+				86F72C0519F105EE003B11AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 86AE960B19D1C4D000C681E8 /* Project object */;
+}
